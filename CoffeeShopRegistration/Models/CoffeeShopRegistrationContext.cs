@@ -30,8 +30,6 @@ namespace CoffeeShopRegistration.Models
         {
             modelBuilder.Entity<User>(entity =>
             {
-                entity.HasNoKey();
-
                 entity.Property(e => e.Email).HasMaxLength(20);
 
                 entity.Property(e => e.FirstName).HasMaxLength(20);
